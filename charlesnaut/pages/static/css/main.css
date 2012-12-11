@@ -13,9 +13,39 @@ body {
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
 }
 
+#info-pane {
+    float: right;
+}
+
 #banner-name {
     padding: 10px;
     margin-top: 225px;
-    float: right;
     font-size: 80px;
+}
+
+#bio {
+    float: right;
+    width: 500px;
+    padding: 10px;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+.page-box {
+    height: 100px;
+    
+    text-align: center;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 45px;
+    line-height: 50px;
+    
+    border-style: solid;
+    border-width: 1px;
+
+    font-size: 30px;
+    color: white;
+    background-color: black;
 }
