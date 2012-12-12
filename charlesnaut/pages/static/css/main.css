@@ -36,6 +36,10 @@ body {
     line-height: 40px;
 }
 
+#first-row {
+    padding-top: 15px;
+}
+
 .page-box {
     height: 100px;
     
@@ -59,4 +63,16 @@ body {
     color: black;
     background-color: white;
     border-color: white;
+}
+
+.page-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.page-box:hover a {
+    color: black;
 }
