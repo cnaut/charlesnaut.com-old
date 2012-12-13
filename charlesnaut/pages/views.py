@@ -5,3 +5,6 @@ from django.shortcuts import render_to_response
 
 def home(request):
     return render_to_response("pages/home.html")  
+
+def projects(request):
+    return render_to_response("pages/projects.html")
