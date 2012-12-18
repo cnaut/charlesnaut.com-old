@@ -12,6 +12,19 @@ function shiftBoxes() {
     $("#container").removeClass("container");
     $("#container").addClass("container-fluid");
     
+    $("#page-boxes").addClass("span3");
     $(".page-box").css("float", "none");
+    $(".page-box").removeClass("span4");
 
+}
+
+function showPage(id) {
+    setTimeout(function() { showPageNow(id); }, 350);
+}
+
+function showPageNow(id) {
+    $("#" + id).removeClass("hidden-page");
+    
+    var position = $("#" + id + "-box").position();
+    $("#" + id).offset({ top: position.top, left: position.left + 250 });
 }
