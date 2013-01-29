@@ -26,7 +26,8 @@
     
         
         <div id="container" class="container">
-            <div>
+            <div id="content">
+                <div id="floater"></div>
                 <div id="page-boxes">
                     <div class="row" id="first-row">
                         <div class="span4 page-box"><a href="projects"><span class="page-title">Projects</span></a></div>
@@ -34,7 +35,7 @@
                         <div class="span4 page-box" id="papers-box" onclick="shiftBoxes(); showPage('papers');"><span class="page-title">Papers</span></div>
                     </div>
                     <div class="row">
-                        <div class="span4 page-box"><a href="http://twitter.com/cnaut"><span class="page-title">Twitter</span></a></div>
+                        <div class="span4 page-box"><a href="http://twitter.com/cnaut"><img class="page-box-icon" src="{% get_static_prefix %}img/twitter.png" /><span class="page-title">Twitter</span></a></div>
                         <div class="span4 page-box"><a href="http://blog.charlesnaut.com"><span class="page-title">Blog</span></a></div>
                         <div class="span4 page-box"><a href="http://linkedin.com/in/charlesnaut"><span class="page-title">Linkedin</span></a></div>
                     </div>

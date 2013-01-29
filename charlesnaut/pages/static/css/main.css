@@ -1,7 +1,6 @@
 #banner {
     margin: 0;
-    margin: 0;
-    height: 300px;
+    height: 250px;
     width: 100%;
     color: white;
     background-color: black;
@@ -21,20 +20,26 @@
 
 #banner-name {
     padding: 10px;
-    margin-top: 225px;
+    margin-top: 180px;
     font-size: 80px;
 }
 
 #bio {
     float: right;
-    width: 500px;
+    width: 555px;
     padding: 10px;
-    font-size: 35px;
+    font-size: 31px;
     line-height: 40px;
 }
 
+#page-boxes {
+    position: relative;
+    clear: left;
+    height: 284px;
+    margin: 0 auto;
+}
+
 #first-row {
-    padding-top: 15px;
 }
 
 .page-box {
@@ -71,6 +76,12 @@
 
 .page-box:hover a {
     color: black;
+}
+
+.page-box-icon {
+    position: relative;
+    padding-top: 10px;
+    
 }
 
 .page-title {

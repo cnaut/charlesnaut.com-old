@@ -6,6 +6,7 @@
 .menu-item {
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 5px;
 }
 
 .menu-item:hover {
@@ -17,5 +18,13 @@
     padding: 25px;
     font-size: 40px;
     line-height: 40px;
+}
+
+#main-intro p {
+    padding-bottom: 15px;
+}
+
+#main-intro .main-details {
+    font-size: 30px;
 }
 
