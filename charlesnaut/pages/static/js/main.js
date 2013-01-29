@@ -28,3 +28,10 @@ function showPageNow(id) {
     var position = $("#" + id + "-box").position();
     $("#" + id).offset({ top: position.top, left: position.left + 250 });
 }
+
+function transitionPage(id){
+    $("#" + id).removeClass("hidden-page");
+    $(".current-page").addClass("hidden-page");
+    $(".current-page").removeClass("current-page");
+    $("#" + id).addClass("current-page");
+}
