@@ -14,17 +14,31 @@
     color: white;
 }
 
+.menu-item a {
+    color: #333;
+}
+
+.menu-item a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .page {
     padding: 25px;
     font-size: 40px;
     line-height: 40px;
 }
 
-#main-intro p {
-    padding-bottom: 15px;
+#main p {
+    padding-bottom: 12px;
 }
 
-#main-intro .main-details {
+p#main-intro {
+    padding-bottom: 25px;
+}
+
+
+#main .main-details {
     font-size: 30px;
 }
 

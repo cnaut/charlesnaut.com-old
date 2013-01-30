@@ -30,8 +30,14 @@ function showPageNow(id) {
 }
 
 function transitionPage(id){
-    $("#" + id).removeClass("hidden-page");
-    $(".current-page").addClass("hidden-page");
-    $(".current-page").removeClass("current-page");
-    $("#" + id).addClass("current-page");
+    if($(".current-page").attr('id') == id)
+        return;
+    
+    $(".current-page").slideUp(600, "linear", function() {
+            $("#" + id).removeClass("hidden-page"); 
+            $(".current-page").addClass("hidden-page");
+            $(".current-page").removeClass("current-page");
+            $("#" + id).addClass("current-page"); 
+            $("#" + id).show()});
+    //$("#" + id).slideUp();
 }

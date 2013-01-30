@@ -28,22 +28,27 @@
         <div id="container" class="container-fluid">
             <div class="row-fluid">
                 <div class="span2" id="side-bar">
+                    <div class="menu-item" onclick="transitionPage('main')">Home</div>
                     <div class="menu-item" onclick="transitionPage('project-page')">Projects</div>
                     <div class="menu-item">Resume</div>
-                    <div class="menu-item">Papers</div>
-                    <div class="menu-item">Twitter</div>
-                    <div class="menu-item">Blog</div>
+                    <div class="menu-item" onclick="transitionPage('papers-page')">Papers</div>
+                    <div class="menu-item"><a href="http://twitter.com/cnaut" target="_blank">Twitter</a></div>
+                    <div class="menu-item"><a href="http://charlesnaut.com" target="_blank">Blog</a></div>
                     <div class="menu-item">Linkedin</div>
                 </div>
-                <div class="span10 page current-page" id="main-intro">
-                    <p>Hey! I'm a recent Stanford CS grad working as a Program Manager for Microsoft's Bing search engine.</p> 
+                <div class="span10 page current-page" id="main">
+                    <p id="main-intro">Hey! I'm a recent Stanford CS grad working as a Program Manager for Microsoft's Bing search engine.</p> 
                     <p class="main-details">My <b>passions</b> include technology, social change, and entrepreneurship.</p>
-                    <p class="main-details">My <b>loves</b> include my family, my friends, New York, Stanford, baby back ribs, sports, video games, and movies.</p>
-                    <p class="main-details">My <b>interests</b> include programming, cloud computing, business, artificial intelligence,  
+                    <p class="main-details">My <b>loves</b> include my family, my friends, New York, Stanford, baby back ribs, data, sports, video games, and movies.</p>
+                    <p class="main-details">My <b>interests</b> include programming, business, artificial intelligence, social media, and quantified self.  
                 </div>
 
                 <div class="span10 page hidden-page" id="project-page">
                     <p>These are my projects</p>
+                </div>
+
+                <div class="span10 page hidden-page" id="papers-page">
+                    <p>These are my papers</p>
                 </div>
             </div>
         </div>
