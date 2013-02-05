@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Charles Naut</title>
+        <title>Charles Naut - {% block page-title %}{% endblock %}</title>
 
         {% load static %}
         <link rel="stylesheet" href="{% get_static_prefix %}css/bootstrap-responsive.min.css" type="text/css" />
@@ -30,51 +30,15 @@
                 <div class="span2" id="side-bar">
                     <div class="menu-item" onclick="transitionPage('main')">Home</div>
                     <div class="menu-item" onclick="transitionPage('project-page')">Projects</div>
-                    <div class="menu-item"><a href="/projects">Projects</a></div>
                     <div class="menu-item"><a href="/resume" target="_blank">Resume</a></div>
                     <div class="menu-item" onclick="transitionPage('papers-page')">Papers</div>
                     <div class="menu-item"><a href="http://twitter.com/cnaut" target="_blank">Twitter</a></div>
                     <div class="menu-item"><a href="http://charlesnaut.com" target="_blank">Blog</a></div>
                     <div class="menu-item"><a href="http://www.linkedin.com/in/charlesnaut" target="_blank">Linkedin</a></div>
                 </div>
-                <div class="span10 page current-page" id="main">
-                    <p id="main-intro">Hey! I'm a recent Stanford CS grad working as a Program Manager for Microsoft's Bing search engine.</p> 
-                    <p class="main-details">My <b>passions</b> include technology, social change, and entrepreneurship.</p>
-                    <p class="main-details">My <b>loves</b> include my family, my friends, New York, Stanford, baby back ribs, data, sports, video games, and movies.</p>
-                    <p class="main-details">My <b>interests</b> include programming, business models, artificial intelligence, the developing world, social media, and quantified self.  
-                </div>
 
-                <div class="span10 page hidden-page" id="project-page">
-                    <p>Some projects I've worked on</p>
-
-                    <div>
-                        <a href="http://considerateapp.com" target="_blank">Considerate App</a>
-                    </div>
-
-                    <div>
-                        <a href="http://ksoundsgood.com" target="_blank">k. sounds good.</a>
-                    </div>
-
-                    <div>
-                        <a href="http://emarschner.github.com/mobydick-newsscroll/" target="_blank">i4bi: Moby Dick Project</a>
-                    </div>
-
-                    <div>
-                        <a href="http://dodgebook.com" target="_blank">dodgebook</a>
-                    </div>
-
-                    <div>
-                        <a href="http://www.youtube.com/watch?v=buxgbjT1tlI" target="_blank">Instant Input</a>
-                    </div>
-
-
-                    <div>
-                        <a href="http://mycollegestat.com" target="_blank">myCollegeSTAT</a>
-                    </div>
-                </div>
-
-                <div class="span10 page hidden-page" id="papers-page">
-                    <p>Some papers I've written</p>
+                <div class="span10" id="main">
+                   {% block content %}{% endblock %} 
                 </div>
             </div>
         </div>

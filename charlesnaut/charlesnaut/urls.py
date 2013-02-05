@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
+from django.conf import settings
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -7,6 +8,9 @@ from django.conf.urls import patterns, include, url
 urlpatterns = patterns('',
     url(r'^$', 'pages.views.home', name='home'),
     url(r'^projects', 'pages.views.projects', name='projects'),
+    url(r'^resume', 'django.views.static.serve', {'document_root': '/static/resume.pdf', 'show_indexes': False}),
+    
+    #url(r'^mobydick/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/static/mobydick'}),
     # url(r'^charlesnaut/', include('charlesnaut.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
