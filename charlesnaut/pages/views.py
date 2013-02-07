@@ -6,5 +6,11 @@ from django.shortcuts import render_to_response
 def home(request):
     return render_to_response("pages/home2.html")  
 
+def v1(request):
+    return render_to_response("pages/home.html")  
+
+def v3(request):
+    return render_to_response("pages/home3.html")  
+
 def projects(request):
     return render_to_response("pages/projects.html")

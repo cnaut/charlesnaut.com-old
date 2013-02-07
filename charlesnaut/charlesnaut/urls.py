@@ -8,7 +8,9 @@ from django.conf import settings
 urlpatterns = patterns('',
     url(r'^$', 'pages.views.home', name='home'),
     url(r'^projects', 'pages.views.projects', name='projects'),
-    url(r'^resume', 'django.views.static.serve', {'document_root': '/static/resume.pdf', 'show_indexes': False}),
+    url(r'^v1', 'pages.views.v1', name='v1'),
+    url(r'^v3', 'pages.views.v3', name='v3'),
+    url(r'^resume', 'django.views.static.serve', {'document_root': '/static/resume.pdf'}),
     
     #url(r'^mobydick/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/static/mobydick'}),
     # url(r'^charlesnaut/', include('charlesnaut.foo.urls')),
