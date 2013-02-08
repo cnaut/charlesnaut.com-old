@@ -41,3 +41,16 @@ function transitionPage(id){
             $("#" + id).show()});
     //$("#" + id).slideUp();
 }
+
+$().ready(function() {
+    var $banner = $("#banner");
+    var $sideBar = $("#side-bar");
+
+    $(window).scroll(function(){            
+        var scrollTop = $(window).scrollTop();
+        var bannerHeight = $banner.height();
+        var marginTop = scrollTop - bannerHeight;
+        marginTop = (marginTop < 0) ? 0 : marginTop;
+        $sideBar.css({'margin-top': marginTop + "px"});
+    });
+});
