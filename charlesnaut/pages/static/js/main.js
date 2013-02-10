@@ -54,3 +54,7 @@ $().ready(function() {
         $sideBar.css({'margin-top': marginTop + "px"});
     });
 });
+
+$("body").on("activate", function(){
+    $('#side-bar').scrollspy();
+});

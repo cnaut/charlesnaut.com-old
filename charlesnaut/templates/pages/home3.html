@@ -5,7 +5,6 @@
 
         {% load static %}
         <link rel="stylesheet" href="{% get_static_prefix %}css/bootstrap-responsive.min.css" type="text/css" />
-        <link rel="stylesheet" href="{% get_static_prefix %}css/main.css" type="text/css" />
         <link rel="stylesheet" href="{% get_static_prefix %}css/main2.css" type="text/css" />
         <link rel="stylesheet" href="{% get_static_prefix %}css/bootstrap.min.css" type="text/css" />
         
@@ -17,7 +16,7 @@
         <script src="{% get_static_prefix %}js/main.js" type="text/javascript"></script>
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target=".side-bar">
         <div id="banner" class="span12">
             <div id="info-pane">
                 <h1 id="banner-name">Charles Naut</h1>
@@ -27,26 +26,27 @@
         
         <div id="container" class="container-fluid">
             <div class="row-fluid">
-                <div class="span2" id="side-bar">
-                    <div class="menu-item"><a href="#main">Home</a></div>
-                    <div class="menu-item"><a href="#projects">Projects</a></div>
-                    <div class="menu-item"><a href="#papers">Papers</div>
-                    <div class="menu-item"><a href="#slides">Slides</div>
-                    <div class="menu-item"><a href="http://twitter.com/cnaut">Twitter</a></div>
-                    <div class="menu-item"><a href="http://charlesnaut.com">Blog</a></div>
-                    <div class="menu-item"><a href="http://www.linkedin.com/in/charlesnaut">Linkedin</a></div>
+                <div class="span2 side-bar" id="side-bar">
+                    <ul class="nav side-nav">
+                        <li class="menu-item"><a href="#main">About</a></li>
+                        <li class="menu-item"><a href="#projects">Projects</a></li>
+                        <li class="menu-item"><a href="#slides">Slides</a></li>
+                        <li class="menu-item"><a href="http://blog.charlesnaut.com">Blog</a></li>
+                        <li class="menu-item"><a href="http://twitter.com/cnaut">Twitter</a></li>
+                        <li class="menu-item"><a href="http://www.linkedin.com/in/charlesnaut">Linkedin</a></li>
+                    </ul>
                 </div>
 
                 <div class="span10">
                     <div class="page current-page" id="main">
                         <p id="main-intro">Hey! I'm a recent Stanford CS grad working as a Program Manager for Microsoft's Bing search engine.</p> 
-                        <p class="main-details">My <b>passions</b> include technology, social change, and entrepreneurship.</p>
-                        <p class="main-details">My <b>loves</b> include my family, my friends, New York, Stanford, baby back ribs, data, sports, video games, and movies.</p>
-                        <p class="main-details">My <b>interests</b> include programming, business models, artificial intelligence, the developing world, social media, and quantified self.  
+                        <p class="main-details">My <strong>passions</strong> include technology, social change, and entrepreneurship.</p>
+                        <p class="main-details">My <strong>loves</strong> include my family, my friends, New York, Stanford, baby back ribs, data, sports, video games, and movies.</p>
+                        <p class="main-details">My <strong>interests</strong> include programming, business models, artificial intelligence, the developing world, social media, and quantified self.  
                     </div>
 
                     <div class="page" id="projects">
-                        <p>Some projects I've worked on</p>
+                        <p>Some projects I've worked on!</p>
 
                         <div>
                             <a href="http://considerateapp.com" target="_blank">Considerate App</a>
@@ -74,24 +74,11 @@
                         </div>
                     </div>
 
-                    <div class="page" id="papers">
-                        <p>Some papers I've written</p>
-                        <div>blah</div>
-                        <div>blah</div>
-                        <div>blah</div>
-                        <div>blah</div>
-                        <div>blah</div>
-                        <div>blah</div>
-                        <div>blah</div>
-                        <div>blah</div>
-                        <div>blah</div>
-                    </div>
-                    
                     <div class="page" id="slides">
                         <p>Some presentations I've given</p>
                     
                         <div>
-                            <object style="margin:0px" width="575" height="410">
+                            <object style="margin:0px" width="575" height="575">
                                 <param name="movie" value="http://static.slidesharecdn.com/swf/multiwidget.swf"/>
                                 <param name="allowFullScreen" value="true"/>
                                 <param name="allowScriptAccess" value="always"/>
