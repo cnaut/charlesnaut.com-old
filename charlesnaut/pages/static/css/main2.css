@@ -1,3 +1,37 @@
+#banner {
+    margin: 0;
+    height: 250px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    background-image: url(/static/img/profilepic.jpg);
+    background-repeat: no-repeat;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
+}
+
+#banner:hover {
+    color: black;
+    background-color: white;
+}
+
+#info-pane {
+    float: right;
+}
+
+#banner-name {
+    padding: 10px;
+    margin-top: 180px;
+    font-size: 80px;
+}
+
+#bio {
+    float: right;
+    width: 555px;
+    padding: 10px;
+    font-size: 31px;
+    line-height: 40px;
+}
+
 #side-bar {
     font-size: 40px;
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
@@ -55,4 +89,12 @@ div.hidden-page {
 
 #project-page div {
     font-size: 37px;
+}
+
+#projects {
+    padding-bottom: 50px;
+}
+
+#projects div {
+ line-height: 50px;
 }
