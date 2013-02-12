@@ -1,17 +1,22 @@
+body * {
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
+}
+
 #banner {
     margin: 0;
-    height: 250px;
+    height: 225px;
     width: 100%;
     color: white;
     background-color: black;
     background-image: url(/static/img/profilepic.jpg);
     background-repeat: no-repeat;
-    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
 }
 
-#banner:hover {
-    color: black;
+#info-pane:hover {
     background-color: white;
+}
+#info-pane:hover a {
+    color: black;
 }
 
 #info-pane {
@@ -20,15 +25,20 @@
 
 #banner-name {
     padding: 10px;
-    margin-top: 180px;
-    font-size: 80px;
+    margin-top: 155px;
+    font-size: 70px;
+}
+
+#banner-name a {
+    color: white;
+    text-decoration: none;
 }
 
 #bio {
     float: right;
     width: 555px;
     padding: 10px;
-    font-size: 31px;
+    font-size: 30px;
     line-height: 40px;
 }
 
@@ -72,7 +82,7 @@
 
 .page {
     padding: 25px;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 40px;
 }
 
