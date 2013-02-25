@@ -53,6 +53,17 @@ $().ready(function() {
         marginTop = (marginTop < 0) ? 0 : marginTop;
         $sideBar.css({'margin-top': marginTop + "px"});
     });
+
+    $(".menu-item a").click(function(){
+        console.log("test");
+        var t= $(this.hash);
+        var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
+            if(t.length){
+                var tOffset=t.offset().top;
+                $('html,body').animate({scrollTop:tOffset-20},'slow');
+                return false;
+            }
+    });
 });
 
 $("body").on("activate", function(){
