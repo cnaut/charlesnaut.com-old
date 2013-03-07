@@ -115,6 +115,6 @@ div.hidden-page {
     padding-bottom: 50px;
 }
 
-#projects div {
+#projects div, #papers div {
  line-height: 50px;
 }

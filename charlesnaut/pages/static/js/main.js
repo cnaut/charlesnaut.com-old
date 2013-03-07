@@ -55,12 +55,11 @@ $().ready(function() {
     });
 
     $(".menu-item a").click(function(){
-        console.log("test");
         var t= $(this.hash);
         var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
             if(t.length){
                 var tOffset=t.offset().top;
-                $('html,body').animate({scrollTop:tOffset-20},'slow');
+                $('html,body').animate({scrollTop:tOffset},'slow');
                 return false;
             }
     });
