@@ -72,11 +72,11 @@ body * {
     text-decoration: none;
 }
 
-.side-nav .active {
+.side-nav .active + li {
     background-color: black;
 }
 
-.side-nav .active a {
+.side-nav .active + li a {
     color: white;
 }
 

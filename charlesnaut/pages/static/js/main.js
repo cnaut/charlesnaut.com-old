@@ -51,6 +51,11 @@ $().ready(function() {
         var bannerHeight = $banner.height();
         var marginTop = scrollTop - bannerHeight;
         marginTop = (marginTop < 0) ? 0 : marginTop;
+        
+        if(marginTop == 0) {
+            $("li").removeClass("active");
+        }
+
         $sideBar.css({'margin-top': marginTop + "px"});
     });
 
@@ -58,7 +63,7 @@ $().ready(function() {
         var t= $(this.hash);
         var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
             if(t.length){
-                var tOffset=t.offset().top;
+                var tOffset=t.offset().top - 60;
                 $('html,body').animate({scrollTop:tOffset},'slow');
                 return false;
             }
