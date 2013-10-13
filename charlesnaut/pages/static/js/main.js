@@ -70,6 +70,6 @@ $().ready(function() {
     });
 });
 
-$("body").on("activate", function(){
+$("body").on("activate", function() {
     $('#side-bar').scrollspy();
 });
