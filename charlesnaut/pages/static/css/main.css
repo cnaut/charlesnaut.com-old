@@ -4,34 +4,33 @@ body * {
 
 #banner {
     margin: 0;
-    height: 200px;
     width: 100%;
     color: white;
     background-color: black;
-    background-image: url(/static/img/profilepic.jpg);
     background-repeat: no-repeat;
+    position: fixed;
 }
 
 #info-pane:hover {
-    background-color: white;
 }
 #info-pane:hover a {
-    color: black;
 }
 
 #info-pane {
-    float: right;
 }
 
 #banner-name {
     padding: 10px;
-    margin-top: 140px;
     font-size: 60px;
 }
 
 #banner-name a {
     color: white;
     text-decoration: none;
+}
+
+#container {
+    padding-top: 50px;
 }
 
 #bio {
@@ -43,6 +42,7 @@ body * {
 }
 
 #side-bar {
+    padding-top: 40px;
     font-size: 35px;
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
 }

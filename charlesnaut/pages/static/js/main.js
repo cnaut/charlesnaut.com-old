@@ -47,7 +47,7 @@ $().ready(function() {
     var $sideBar = $("#side-bar");
 
     $(window).scroll(function(){            
-        var scrollTop = $(window).scrollTop();
+        var scrollTop = $(window).scrollTop() + 80;
         var bannerHeight = $banner.height();
         var marginTop = scrollTop - bannerHeight;
         marginTop = (marginTop < 0) ? 0 : marginTop;
