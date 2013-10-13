@@ -7,47 +7,139 @@
         <link rel="stylesheet" href="{% get_static_prefix %}css/bootstrap-responsive.min.css" type="text/css" />
         <link rel="stylesheet" href="{% get_static_prefix %}css/main.css" type="text/css" />
         <link rel="stylesheet" href="{% get_static_prefix %}css/bootstrap.min.css" type="text/css" />
-        
+        <link rel="stylesheet" href="{% get_static_prefix %}css/icon.css" type="text/css" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.min.js" type="text/javascript"></script> --!>
         <script src="{% get_static_prefix %}js/jquery-1.8.3.min.js" type="text/javascript"></script>
         <script src="{% get_static_prefix %}js/bootstrap.min.js" type="text/javascript"></script>
         <script src="{% get_static_prefix %}js/main.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-9093589-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
     </head>
 
-    <body>
+    <body data-spy="scroll" data-target=".side-bar">
         <div id="banner" class="span12">
             <div id="info-pane">
-                <span id="bio">I'm a recent Stanford CS grad working as a Program Manager for Microsoft's Bing search engine.</span>
-                <h1 id="banner-name">Charles Naut</h1>
+                <h1 id="banner-name"><a href="http://charlesnaut.com">Charles Naut</a></h1>
             </div>
        </div>
     
         
-        <div id="container" class="container">
-            <div id="content">
-                <div id="floater"></div>
-                <div id="page-boxes">
-                    <div class="row" id="first-row">
-                        <div class="span4 page-box"><a href="projects"><span class="page-title">Projects</span></a></div>
-                        <div class="span4 page-box"><span class="page-title">Resume</span></div>
-                        <div class="span4 page-box" id="papers-box" onclick="shiftBoxes(); showPage('papers');"><span class="page-title">Papers</span></div>
-                    </div>
-                    <div class="row">
-                        <div class="span4 page-box"><a href="http://twitter.com/cnaut"><img class="page-box-icon" src="{% get_static_prefix %}img/twitter.png" /><span class="page-title">Twitter</span></a></div>
-                        <div class="span4 page-box"><a href="http://blog.charlesnaut.com"><span class="page-title">Blog</span></a></div>
-                        <div class="span4 page-box"><a href="http://linkedin.com/in/charlesnaut"><span class="page-title">Linkedin</span></a></div>
-                    </div>
+        <div id="container" class="container-fluid">
+            <div class="row-fluid">
+                <div class="span2 side-bar" id="side-bar">
+                    <ul class="nav side-nav">
+                        <li class="menu-item"><a href="#main">About</a></li>
+                        <li class="menu-item"><a href="#projects">Projects</a></li>
+                        <li class="menu-item"><a href="#papers">Papers</a></li>
+                        <li class="menu-item"><a href="#slides">Slides</a></li>
+                        <li class="menu-item"><a href="#social">Social</a></li>
+                    </ul>
                 </div>
+
                 <div class="span9">
-                    <div class="hidden-page" id="papers">
-                        <h3>I wrote this</h3>
+                    <div class="page current-page" id="main">
+                        <p id="main-intro">Hey! I'm a recent Stanford CS grad working as a Program Manager for Microsoft's Bing search engine.</p> 
+                        <p class="main-details">My <strong>passions</strong> include technology, social change, and entrepreneurship.</p>
+                        <p class="main-details">My <strong>loves</strong> include my family, my friends, New York, Stanford, baby back ribs, data, sports, and video games.</p>
+                        <p class="main-details">My <strong>interests</strong> include programming, business models, machine learning, the developing world, social media, and quantified self.  
                     </div>
+                
+
+                    <div class="page" id="projects">
+                        <p>Some projects I've worked on!</p>
+
+                        <div>
+                            <a href="http://considerateapp.com" target="_blank">Considerate App</a>
+                        </div>
+
+                        <div>
+                            <a href="http://ksoundsgood.com" target="_blank">k. sounds good.</a>
+                        </div>
+
+                        <div>
+                            <a href="http://emarschner.github.com/mobydick-newsscroll/" target="_blank">i4bi: Moby Dick Project</a>
+                        </div>
+
+                        <div>
+                            <a href="http://dodgebook.com" target="_blank">dodgebook</a>
+                        </div>
+
+                        <div>
+                            <a href="http://www.youtube.com/watch?v=buxgbjT1tlI" target="_blank">Instant Input</a>
+                        </div>
+
+
+                        <div>
+                            <a href="http://mycollegestat.com" target="_blank">myCollegeSTAT</a>
+                        </div>
+                    </div>
+
+                    <div class="page" id="papers">
+                        <p>Some papers I've written!</p>
+
+                        <div>
+                            <a href="http://docs.charlesnaut.com/papers/ClassifiyingKivaLoans.pdf" target="_blank">Classifying Kiva Loans Based on Funding Time</a>
+                        </div>
+                        
+                        <div>
+                            <a href="http://docs.charlesnaut.com/papers/TumblrProfitability.pdf" target="_blank">Can Tumblr be Profitable?</a>
+                        </div>
+
+                        <div>
+                            <a href="http://docs.charlesnaut.com/papers/FuturePersonalComputer.pdf" target="_blank">The Future Personal Computer</a>
+                        </div>
+                        
+                        <div>
+                            <a href="http://docs.charlesnaut.com/papers/XNA.pdf" target="_blank">XNA: Creating Creators</a>
+                        </div>
+                    </div>
+
+                    <div class="page" id="slides">
+                        <p>Some presentations I've given!</p>
+                    
+                        <div>
+                            <object style="margin:0px" width="575" height="420">
+                                <param name="movie" value="http://static.slidesharecdn.com/swf/multiwidget.swf"/>
+                                <param name="allowFullScreen" value="true"/>
+                                <param name="allowScriptAccess" value="always"/>
+                                <param name="flashVars" value="feedurl=user/cnaut&widgettitle=%20Playlist%20%3A%20My%20Uploads"/>
+                                <embed src="http://static.slidesharecdn.com/swf/multiwidget.swf" flashVars="feedurl=user/cnaut&widgettitle=%20Playlist%20%3A%20My%20Uploads" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="575" height="410">
+                                </embed>
+                            </object>
+                        </div>
+                    </div>
+                    
+                    <div class="page" id="social">
+                        <p>Some social networks I'm on!</p>
+                        
+                        <ul class="socialicons color">
+                            <li><a href="http://linkedin.com/in/charlesnaut" class="linkedin" target="_blank">linkedin</a></li>
+                            <li><a href="http://twitter.com/cnaut" class="twitter" target="_blank">twitter</a></li>
+                            <li><a href="http://blog.charlesnaut.com" class="tumblr" target="_blank">tumblr</a></li>
+                            <li><a href="http://quora.com/Charles-Naut" class="quora" target="_blank">quora</a></li>
+                            <li><a href="http://pinterest.com/cnaut" class="pinterest" target="_blank">pinterest</a></li>
+                            <li><a href="http://plus.google.com/109949815088571911819" class="gpluslight" target="_blank">gpluslight</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="end-padding"></div>
+                
                 </div>
             </div>
         </div>
-
         
     </body>
 

@@ -1,0 +1,94 @@
+#banner {
+    margin: 0;
+    height: 250px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    background-image: url(/static/img/profilepic.jpg);
+    background-repeat: no-repeat;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
+}
+
+#banner:hover {
+    color: black;
+    background-color: white;
+}
+
+#info-pane {
+    float: right;
+}
+
+#banner-name {
+    padding: 10px;
+    margin-top: 180px;
+    font-size: 80px;
+}
+
+#bio {
+    float: right;
+    width: 555px;
+    padding: 10px;
+    font-size: 31px;
+    line-height: 40px;
+}
+
+#page-boxes {
+    position: relative;
+    clear: left;
+    height: 284px;
+    margin: 0 auto;
+}
+
+#first-row {
+}
+
+.page-box {
+    height: 125px;
+    
+    text-align: center;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    line-height: 50px;
+    
+    border-style: solid;
+    border-width: 1px;
+
+    font-size: 30px;
+    color: white;
+    background-color: black;
+}
+
+.page-box:hover {
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+
+.page-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.page-box:hover a {
+    color: black;
+}
+
+.page-box-icon {
+    position: relative;
+    padding-top: 10px;
+    
+}
+
+.page-title {
+    position: absolute;
+    padding-top: 35px;
+}
+
+.hidden-page {
+    display: none;
+}

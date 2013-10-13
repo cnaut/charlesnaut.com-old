@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Charles Naut</title>
+
+        {% load static %}
+        <link rel="stylesheet" href="{% get_static_prefix %}css/bootstrap-responsive.min.css" type="text/css" />
+        <link rel="stylesheet" href="{% get_static_prefix %}css/main3.css" type="text/css" />
+        <link rel="stylesheet" href="{% get_static_prefix %}css/bootstrap.min.css" type="text/css" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.min.js" type="text/javascript"></script> --!>
+        <script src="{% get_static_prefix %}js/jquery-1.8.3.min.js" type="text/javascript"></script>
+        <script src="{% get_static_prefix %}js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="{% get_static_prefix %}js/main.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div id="banner" class="span12">
+            <div id="info-pane">
+                <span id="bio">I'm a recent Stanford CS grad working as a Program Manager for Microsoft's Bing search engine.</span>
+                <h1 id="banner-name">Charles Naut</h1>
+            </div>
+       </div>
+    
+        
+        <div id="container" class="container">
+            <div id="content">
+                <div id="floater"></div>
+                <div id="page-boxes">
+                    <div class="row" id="first-row">
+                        <div class="span4 page-box"><a href="projects"><span class="page-title">Projects</span></a></div>
+                        <div class="span4 page-box"><span class="page-title">Resume</span></div>
+                        <div class="span4 page-box" id="papers-box" onclick="shiftBoxes(); showPage('papers');"><span class="page-title">Papers</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="span4 page-box"><a href="http://twitter.com/cnaut"><img class="page-box-icon" src="{% get_static_prefix %}img/twitter.png" /><span class="page-title">Twitter</span></a></div>
+                        <div class="span4 page-box"><a href="http://blog.charlesnaut.com"><span class="page-title">Blog</span></a></div>
+                        <div class="span4 page-box"><a href="http://linkedin.com/in/charlesnaut"><span class="page-title">Linkedin</span></a></div>
+                    </div>
+                </div>
+                <div class="span9">
+                    <div class="hidden-page" id="papers">
+                        <h3>I wrote this</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+
+</html>
