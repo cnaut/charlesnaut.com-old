@@ -63,7 +63,7 @@ $().ready(function() {
         var t= $(this.hash);
         var t=t.length&&t||$('[name='+this.hash.slice(1)+']');
             if(t.length){
-                var tOffset=t.offset().top - 60;
+                var tOffset=t.offset().top - 100;
                 $('html,body').animate({scrollTop:tOffset},'slow');
                 return false;
             }
@@ -72,4 +72,5 @@ $().ready(function() {
 
 $("body").on("activate", function() {
     $('#side-bar').scrollspy();
+	$('#top-bar').scrollspy();
 });

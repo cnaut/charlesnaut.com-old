@@ -11,13 +11,6 @@ body * {
     position: fixed;
 }
 
-#info-pane:hover {
-}
-#info-pane:hover a {
-}
-
-#info-pane {
-}
 
 #banner-name {
     padding: 10px;
@@ -33,6 +26,36 @@ body * {
     padding-top: 50px;
 }
 
+#top-bar{
+	position: fixed;
+	margin-top: 65px;
+}
+
+@media (max-width: 700px) { 
+	#top-bar {
+		display: block;
+	}
+	
+	#side-bar {
+		display: none;
+	}
+	
+	#content {
+		padding-top: 35px;
+	}
+}
+
+@media (min-width: 701px) { 
+	#top-bar {
+		display: none;
+	}
+	
+	#side-bar {
+		display: block;
+	}
+}
+
+
 #bio {
     float: right;
     width: 555px;
@@ -41,7 +64,7 @@ body * {
     line-height: 40px;
 }
 
-#side-bar {
+#side-bar, #top-bar {
     padding-top: 40px;
     font-size: 35px;
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
@@ -77,6 +100,14 @@ body * {
 }
 
 .side-nav .active + li a {
+    color: white;
+}
+
+.top-nav .active {
+    background-color: black;
+}
+
+.top-nav .active {
     color: white;
 }
 
