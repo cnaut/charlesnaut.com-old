@@ -38,6 +38,7 @@ body * {
 	
 	#top-bar {
 		display: block;
+		font-size: 30px;
 	}
 	
 	#side-bar {
@@ -46,6 +47,15 @@ body * {
 	
 	#content {
 		padding-top: 35px;
+		width: 100%
+	}
+
+    .page {
+		font-size: 25px;
+    } 
+	
+	#main .main-details {
+		font-size: 20px;
 	}
 }
 
@@ -56,6 +66,16 @@ body * {
 	
 	#side-bar {
 		display: block;
+		font-size: 35px;
+	}
+	
+	.page {
+		font-size: 30px;
+	}
+	
+	
+	#main .main-details {
+		font-size: 25px;
 	}
 }
 
@@ -70,7 +90,6 @@ body * {
 
 #side-bar, #top-bar {
     padding-top: 40px;
-    font-size: 35px;
     font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif
 }
 
@@ -117,7 +136,6 @@ body * {
 
 .page {
     padding: 25px;
-    font-size: 30px;
     line-height: 40px;
 }
 
@@ -127,11 +145,6 @@ body * {
 
 p#main-intro {
     padding-bottom: 25px;
-}
-
-
-#main .main-details {
-    font-size: 25px;
 }
 
 div.hidden-page {
