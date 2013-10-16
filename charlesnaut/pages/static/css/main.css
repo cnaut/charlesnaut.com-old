@@ -38,7 +38,8 @@ body * {
 	
 	#top-bar {
 		display: block;
-		font-size: 30px;
+		font-size: 25px;
+		margin-left: 0px;
 	}
 	
 	#side-bar {
@@ -51,11 +52,15 @@ body * {
 	}
 
     .page {
-		font-size: 25px;
+		font-size: 20px;
     } 
 	
 	#main .main-details {
-		font-size: 20px;
+		font-size: 15px;
+	}
+	
+	body {
+		padding: 0px;
 	}
 }
 
