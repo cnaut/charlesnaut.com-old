@@ -11,6 +11,7 @@ urlpatterns = patterns('',
     url(r'^v1', 'pages.views.v1', name='v1'),
     url(r'^v2', 'pages.views.v2', name='v2'),
     url(r'^v3', 'pages.views.v3', name='v3'),
+    url(r'^v5', 'pages.views.v5', name='v5'),
     url(r'^resume', 'django.views.static.serve', {'document_root': '/static/resume.pdf'}),
     
     #url(r'^mobydick/(?P<path>.*)$', 'django.views.static.serve', {'document_root': '/static/mobydick'}),

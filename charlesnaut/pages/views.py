@@ -16,5 +16,8 @@ def v2(request):
 def v3(request):
     return render_to_response("pages/home3.html")  
 
+def v5(request):
+    return render_to_response("pages/home5.html")  
+
 def projects(request):
     return render_to_response("pages/projects.html")
