@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 
 def home(request):
-    return render_to_response("pages/home.html")  
+    return render_to_response("pages/home5.html")  
 
 def v1(request):
     return render_to_response("pages/home4.html")  
@@ -15,6 +15,9 @@ def v2(request):
 
 def v3(request):
     return render_to_response("pages/home3.html")  
+
+def v5(request):
+    return render_to_response("pages/home5.html")  
 
 def projects(request):
     return render_to_response("pages/projects.html")
